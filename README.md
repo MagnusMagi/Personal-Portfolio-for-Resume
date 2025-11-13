@@ -36,8 +36,10 @@ A modern, responsive, and fully accessible portfolio website built with Next.js 
 
 ## 📋 Prerequisites
 
-- Node.js 18+ 
-- npm or yarn
+- **Node.js 20.9.0 or higher** (Next.js 16 requirement)
+- **npm 10.0.0 or higher** (or yarn/pnpm)
+
+> **Note:** If you're using Node.js 18, please upgrade to Node.js 20.9.0+. You can use [nvm](https://github.com/nvm-sh/nvm) to manage multiple Node.js versions.
 
 ## 🛠️ Installation
 
@@ -74,12 +76,12 @@ CMS_API_KEY=your-generated-api-key-here
 
 **See [docs/CMS_INTEGRATION.md](docs/CMS_INTEGRATION.md) for detailed API key generation instructions.**
 
-4. Run the development server:
+5. Run the development server:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📁 Project Structure
 
