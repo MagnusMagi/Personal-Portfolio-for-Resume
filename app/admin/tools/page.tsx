@@ -162,11 +162,16 @@ export default function AdminToolsPage() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-[var(--color-primary)] mb-4">Tools CMS</h1>
           
-          {!isAuthenticated ? (
-            <div className="bg-[var(--color-bg-light)] p-4 rounded-lg mb-6">
-              <p className="text-sm text-[var(--color-secondary)] mb-2">
-                Set your API key (default: your-secret-key-change-in-production)
-              </p>
+                 {!isAuthenticated ? (
+                   <div className="bg-[var(--color-bg-light)] p-4 rounded-lg mb-6">
+                     <p className="text-sm text-[var(--color-secondary)] mb-2">
+                       Enter your API key to manage tools. Generate one using:
+                     </p>
+                     <div className="text-xs text-[var(--color-text-muted)] mb-3 space-y-1">
+                       <p>• <code className="bg-white px-1 rounded">openssl rand -hex 32</code></p>
+                       <p>• <code className="bg-white px-1 rounded">node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"</code></p>
+                       <p className="mt-2">Or use the default key for development: <code className="bg-white px-1 rounded">your-secret-key-change-in-production</code></p>
+                     </div>
               <div className="flex gap-2">
                 <input
                   type="password"

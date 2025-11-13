@@ -40,9 +40,26 @@ npm install
 ```
 
 3. Create a `.env.local` file (optional, for CMS):
-```env
-CMS_API_KEY=your-secret-key-change-in-production
+```bash
+# Copy the example file
+cp .env.local.example .env.local
+
+# Generate a secure API key (choose one method):
+# Option 1: OpenSSL
+openssl rand -hex 32
+
+# Option 2: Node.js
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+
+# Then edit .env.local and replace the API key with your generated key
 ```
+
+Or manually create `.env.local`:
+```env
+CMS_API_KEY=your-generated-api-key-here
+```
+
+**See [docs/CMS_INTEGRATION.md](docs/CMS_INTEGRATION.md) for detailed API key generation instructions.**
 
 4. Run the development server:
 ```bash
@@ -107,15 +124,49 @@ Access the admin panel at: `http://localhost:3000/admin/tools`
 
 ### Authentication
 
-Set the `CMS_API_KEY` environment variable in `.env.local`:
+#### Generate an API Key
 
-```env
-CMS_API_KEY=your-secret-key-change-in-production
+Generate a secure API key using one of these methods:
+
+**Option 1: OpenSSL (Recommended)**
+```bash
+openssl rand -hex 32
 ```
 
-**Important**: Use a strong API key in production!
+**Option 2: Node.js**
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
 
-For detailed documentation, see [docs/CMS_INTEGRATION.md](docs/CMS_INTEGRATION.md)
+**Option 3: Online Generator**
+Visit [randomkeygen.com](https://randomkeygen.com/) and use a 256-bit key.
+
+#### Set Up API Key
+
+1. Create `.env.local` file in the project root:
+```bash
+touch .env.local
+```
+
+2. Add your generated API key:
+```env
+CMS_API_KEY=your-generated-api-key-here
+```
+
+3. Restart the development server:
+```bash
+npm run dev
+```
+
+**Important**: 
+- ✅ Never commit `.env.local` to Git (already in `.gitignore`)
+- ✅ Use a strong, random API key (at least 32 characters)
+- ✅ Use different keys for development and production
+- ✅ Keep your API key secret
+
+For detailed documentation:
+- **CMS Integration**: [docs/CMS_INTEGRATION.md](docs/CMS_INTEGRATION.md)
+- **API Key Guide**: [docs/API_KEY_GUIDE.md](docs/API_KEY_GUIDE.md)
 
 ## 🔍 SEO
 
