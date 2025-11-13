@@ -43,18 +43,33 @@ A modern, responsive, and fully accessible portfolio website built with Next.js 
 
 ## 🛠️ Installation
 
-1. Clone the repository:
+1. **Check Node.js version:**
+```bash
+node --version
+# Should be >= 20.9.0
+```
+
+If you need to upgrade Node.js:
+```bash
+# Using nvm (recommended)
+nvm install 20.9.0
+nvm use 20.9.0
+
+# Or download from https://nodejs.org/
+```
+
+2. Clone the repository:
 ```bash
 git clone https://github.com/MagnusMagi/Personal-Portfolio-for-Resume.git
 cd Personal-Portfolio-for-Resume
 ```
 
-2. Install dependencies:
+3. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Create a `.env.local` file (optional, for CMS):
+4. Create a `.env.local` file (optional, for CMS):
 ```bash
 # Copy the example file
 cp .env.local.example .env.local
