@@ -47,10 +47,11 @@ export default function Experience() {
             <div className="w-7 h-7 flex-shrink-0 mt-1">
               <Image
                 src={exp.logo}
-                alt={exp.company}
+                alt={`${exp.company} company logo`}
                 width={28}
                 height={28}
                 className="w-full h-full object-contain"
+                loading="lazy"
               />
             </div>
             <div className="flex-1 space-y-1.5 sm:space-y-2">

@@ -18,7 +18,14 @@
     "resume",
     "accessibility",
     "wcag",
-    "framer-motion"
+    "framer-motion",
+    "seo",
+    "json-ld",
+    "structured-data",
+    "open-graph",
+    "twitter-cards",
+    "cms",
+    "json-based-cms"
   ],
   "scripts": {
     "dev": "next dev",

@@ -16,11 +16,11 @@ export default function Intro() {
         >
           <Image
             src="https://framerusercontent.com/images/gIuAGowCe76ovxh9SE9Uj5g3q4.jpg?width=1024&height=1536"
-            alt="Aydin Gundeger"
+            alt="Aydin Gundeger - Data Analyst and Founder"
             width={70}
             height={70}
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "center top" }}
+            className="w-full h-full object-cover object-[center_top]"
+            priority
           />
         </motion.div>
         <motion.div

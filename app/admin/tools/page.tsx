@@ -13,11 +13,13 @@ export default function AdminToolsPage() {
 
   useEffect(() => {
     fetchTools();
-    // Check if API key is stored
-    const storedKey = localStorage.getItem("cms_api_key");
-    if (storedKey) {
-      setApiKey(storedKey);
-      setIsAuthenticated(true);
+    // Check if API key is stored (SSR safe)
+    if (typeof window !== "undefined") {
+      const storedKey = localStorage.getItem("cms_api_key");
+      if (storedKey) {
+        setApiKey(storedKey);
+        setIsAuthenticated(true);
+      }
     }
   }, []);
 
@@ -34,14 +36,16 @@ export default function AdminToolsPage() {
   };
 
   const handleLogin = () => {
-    if (apiKey) {
+    if (apiKey && typeof window !== "undefined") {
       localStorage.setItem("cms_api_key", apiKey);
       setIsAuthenticated(true);
     }
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("cms_api_key");
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("cms_api_key");
+    }
     setApiKey("");
     setIsAuthenticated(false);
   };
@@ -147,7 +151,7 @@ export default function AdminToolsPage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
-        <p className="text-[#7e7e7e]">Loading...</p>
+        <p className="text-[var(--color-secondary)]">Loading...</p>
       </div>
     );
   }
@@ -156,11 +160,11 @@ export default function AdminToolsPage() {
     <div className="min-h-screen bg-white">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-[#121212] mb-4">Tools CMS</h1>
+          <h1 className="text-3xl font-bold text-[var(--color-primary)] mb-4">Tools CMS</h1>
           
           {!isAuthenticated ? (
-            <div className="bg-[#f5f5f5] p-4 rounded-lg mb-6">
-              <p className="text-sm text-[#7e7e7e] mb-2">
+            <div className="bg-[var(--color-bg-light)] p-4 rounded-lg mb-6">
+              <p className="text-sm text-[var(--color-secondary)] mb-2">
                 Set your API key (default: your-secret-key-change-in-production)
               </p>
               <div className="flex gap-2">
@@ -169,22 +173,22 @@ export default function AdminToolsPage() {
                   value={apiKey}
                   onChange={(e) => setApiKey(e.target.value)}
                   placeholder="Enter API key"
-                  className="px-4 py-2 border border-[#e8e8e8] rounded-lg flex-1"
+                  className="px-4 py-2 border border-[var(--color-border)] rounded-lg flex-1"
                 />
                 <button
                   onClick={handleLogin}
-                  className="px-6 py-2 bg-[#121212] text-white rounded-lg hover:opacity-80"
+                  className="px-6 py-2 bg-[var(--color-primary)] text-white rounded-lg hover:opacity-80"
                 >
                   Login
                 </button>
               </div>
             </div>
           ) : (
-            <div className="bg-[#f5f5f5] p-4 rounded-lg mb-6 flex items-center justify-between">
-              <p className="text-sm text-[#7e7e7e]">Authenticated</p>
+            <div className="bg-[var(--color-bg-light)] p-4 rounded-lg mb-6 flex items-center justify-between">
+              <p className="text-sm text-[var(--color-secondary)]">Authenticated</p>
               <button
                 onClick={handleLogout}
-                className="px-4 py-2 bg-[#7e7e7e] text-white rounded-lg hover:opacity-80 text-sm"
+                className="px-4 py-2 bg-[var(--color-secondary)] text-white rounded-lg hover:opacity-80 text-sm"
               >
                 Logout
               </button>
@@ -193,13 +197,13 @@ export default function AdminToolsPage() {
         </div>
 
         {/* Form */}
-        <div className="bg-[#f5f5f5] p-6 rounded-lg mb-8">
-          <h2 className="text-xl font-semibold text-[#121212] mb-4">
+        <div className="bg-[var(--color-bg-light)] p-6 rounded-lg mb-8">
+          <h2 className="text-xl font-semibold text-[var(--color-primary)] mb-4">
             {editingIndex !== null ? "Edit Tool" : "Add New Tool"}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-[#121212] mb-2">
+              <label className="block text-sm font-medium text-[var(--color-primary)] mb-2">
                 Name
               </label>
               <input
@@ -207,11 +211,11 @@ export default function AdminToolsPage() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-[#e8e8e8] rounded-lg"
+                className="w-full px-4 py-2 border border-[var(--color-border)] rounded-lg"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#121212] mb-2">
+              <label className="block text-sm font-medium text-[var(--color-primary)] mb-2">
                 URL
               </label>
               <input
@@ -219,18 +223,18 @@ export default function AdminToolsPage() {
                 value={formData.href}
                 onChange={(e) => setFormData({ ...formData, href: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-[#e8e8e8] rounded-lg"
+                className="w-full px-4 py-2 border border-[var(--color-border)] rounded-lg"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-[#121212] mb-2">
+              <label className="block text-sm font-medium text-[var(--color-primary)] mb-2">
                 Category
               </label>
               <select
                 value={formData.category}
                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-[#e8e8e8] rounded-lg"
+                className="w-full px-4 py-2 border border-[var(--color-border)] rounded-lg"
               >
                 <option value="">Select category</option>
                 <option value="Design & Productivity">Design & Productivity</option>
@@ -244,7 +248,7 @@ export default function AdminToolsPage() {
             <div className="flex gap-2">
               <button
                 type="submit"
-                className="px-6 py-2 bg-[#121212] text-white rounded-lg hover:opacity-80"
+                className="px-6 py-2 bg-[var(--color-primary)] text-white rounded-lg hover:opacity-80"
               >
                 {editingIndex !== null ? "Update" : "Create"}
               </button>
@@ -252,7 +256,7 @@ export default function AdminToolsPage() {
                 <button
                   type="button"
                   onClick={handleCancel}
-                  className="px-6 py-2 bg-[#7e7e7e] text-white rounded-lg hover:opacity-80"
+                  className="px-6 py-2 bg-[var(--color-secondary)] text-white rounded-lg hover:opacity-80"
                 >
                   Cancel
                 </button>
@@ -263,26 +267,26 @@ export default function AdminToolsPage() {
 
         {/* Tools List */}
         <div>
-          <h2 className="text-xl font-semibold text-[#121212] mb-4">
+          <h2 className="text-xl font-semibold text-[var(--color-primary)] mb-4">
             Tools ({tools.length})
           </h2>
           <div className="space-y-2">
             {tools.map((tool, index) => (
               <div
                 key={index}
-                className="flex items-center justify-between p-4 border border-[#e8e8e8] rounded-lg hover:bg-[#f5f5f5]"
+                className="flex items-center justify-between p-4 border border-[var(--color-border)] rounded-lg hover:bg-[var(--color-bg-light)]"
               >
                 <div className="flex-1">
-                  <h3 className="font-medium text-[#121212]">{tool.name}</h3>
-                  <p className="text-sm text-[#7e7e7e]">{tool.href}</p>
-                  <span className="text-xs text-[#7e7e7e] bg-[#f5f5f5] px-2 py-1 rounded">
+                  <h3 className="font-medium text-[var(--color-primary)]">{tool.name}</h3>
+                  <p className="text-sm text-[var(--color-secondary)]">{tool.href}</p>
+                  <span className="text-xs text-[var(--color-secondary)] bg-[var(--color-bg-light)] px-2 py-1 rounded">
                     {tool.category}
                   </span>
                 </div>
                 <div className="flex gap-2">
                   <button
                     onClick={() => handleEdit(index)}
-                    className="px-4 py-2 bg-[#0099ff] text-white rounded-lg hover:opacity-80 text-sm"
+                    className="px-4 py-2 bg-[var(--color-accent)] text-white rounded-lg hover:opacity-80 text-sm"
                   >
                     Edit
                   </button>

@@ -24,6 +24,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
+            aria-label={`Skill: ${skill}`}
           >
             {skill}
           </motion.span>

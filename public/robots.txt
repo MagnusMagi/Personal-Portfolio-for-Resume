@@ -1,0 +1,10 @@
+# robots.txt for aydingundeger.com
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://aydingundeger.com/sitemap.xml
+

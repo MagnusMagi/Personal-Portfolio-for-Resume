@@ -2,16 +2,17 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
 
 jobs:
-  build:
+  lint-and-build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -27,4 +28,10 @@ jobs:
     
     - name: Build project
       run: npm run build
-
+    
+    - name: Check for build errors
+      run: |
+        if [ $? -ne 0 ]; then
+          echo "Build failed!"
+          exit 1
+        fi

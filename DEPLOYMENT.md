@@ -114,4 +114,48 @@ After deployment, verify:
 4. Animations work smoothly
 5. Responsive design works on mobile
 6. Accessibility features function correctly
+7. SEO metadata is correct (check with [Open Graph Debugger](https://www.opengraph.xyz/))
+8. Sitemap is accessible at `/sitemap.xml`
+9. robots.txt is accessible at `/robots.txt`
+10. Structured Data is valid (test with [Google Rich Results Test](https://search.google.com/test/rich-results))
+
+## 🔍 SEO Post-Deployment Checklist
+
+### Google Search Console Setup
+
+1. **Add Property**
+   - Go to [Google Search Console](https://search.google.com/search-console)
+   - Add your domain: `https://aydingundeger.com`
+
+2. **Submit Sitemap**
+   - Navigate to Sitemaps section
+   - Submit: `https://aydingundeger.com/sitemap.xml`
+
+3. **Verify robots.txt**
+   - Check that robots.txt is accessible
+   - Verify it allows indexing of main pages
+   - Confirm admin panel is disallowed
+
+4. **Test Structured Data**
+   - Use [Rich Results Test](https://search.google.com/test/rich-results)
+   - Enter your URL
+   - Verify Person and WebSite schemas are detected
+
+5. **Create Open Graph Image**
+   - Create a 1200x630px image
+   - Save as `public/og-image.jpg`
+   - Image should include: Name, Title, and branding
+
+### Social Media Preview
+
+Test your Open Graph tags:
+- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+
+### Performance Testing
+
+- [PageSpeed Insights](https://pagespeed.web.dev/)
+- [WebPageTest](https://www.webpagetest.org/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 

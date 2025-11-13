@@ -96,7 +96,7 @@ export default function Tools() {
       <section className="space-y-4 sm:space-y-6">
         <h3 className="text-section-title">Tools</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
-          <div className="p-4 border border-[#e8e8e8] border-dashed rounded-[10px] flex items-center justify-center aspect-square">
+          <div className="p-4 border border-[var(--color-border)] border-dashed rounded-[10px] flex items-center justify-center aspect-square">
             <span className="text-[var(--color-secondary)] text-sm">Loading...</span>
           </div>
         </div>
@@ -126,15 +126,17 @@ export default function Tools() {
                 <div 
                   className="w-full h-full"
                   dangerouslySetInnerHTML={{ __html: getInlineIcon(tool.name)! }}
+                  aria-hidden="true"
                 />
               ) : (
                 <Image
                   src={getIconUrl(tool.name)}
-                  alt={tool.name}
+                  alt={`${tool.name} technology icon`}
                   width={32}
                   height={32}
                   className="w-full h-full object-contain"
                   unoptimized
+                  loading="lazy"
                   onError={(e) => {
                     // Fallback: hide image on error
                     (e.target as HTMLImageElement).style.display = 'none';

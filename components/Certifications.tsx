@@ -7,7 +7,7 @@ const certifications = [
     title: "Advanced Front-End Web Development with React",
     issuer: "Coursera",
     year: "2025",
-    description: "An in-depth certification covering React 18+. Next.js, TypeScript, GraphQL, performance optimizatio, accessibility standards (WCAG 2.2), and Core Web Vitals for production-ready interfaces.",
+    description: "An in-depth certification covering React 18+. Next.js, TypeScript, GraphQL, performance optimization, accessibility standards (WCAG 2.2), and Core Web Vitals for production-ready interfaces.",
     href: "https://www.coursera.org/",
   },
   {
@@ -49,6 +49,7 @@ export default function Certifications() {
                   stroke="currentColor"
                   strokeWidth="2"
                   className="text-[var(--color-secondary)] rotate-45 group-hover:rotate-90 transition-transform transition-smooth"
+                  aria-hidden="true"
                 >
                   <path d="M7 17L17 7M7 7h10v10" />
                 </svg>

@@ -40,6 +40,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--color-accent)] hover:underline transition-smooth"
+              aria-label={`Contact via ${contact.type}: ${contact.value}`}
             >
               {contact.value}
             </a>
