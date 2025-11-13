@@ -1,5 +1,16 @@
 # Personal Portfolio & Resume
 
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![WCAG](https://img.shields.io/badge/WCAG-AA%2FAAA-4CAF50?style=for-the-badge&logo=accessibility&logoColor=white)
+![SEO](https://img.shields.io/badge/SEO-Optimized-FF6B6B?style=for-the-badge)
+
 A modern, responsive, and fully accessible portfolio website built with Next.js 16 and Tailwind CSS v4.1. Features a custom JSON-based CMS, scroll animations, and WCAG AA/AAA compliant typography.
 
 ## ✨ Features
