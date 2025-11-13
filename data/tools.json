@@ -1,0 +1,185 @@
+{
+  "tools": [
+    {
+      "name": "Framer",
+      "href": "https://framer.com/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "Figma",
+      "href": "https://figma.com/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "Arc",
+      "href": "https://arc.net/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "Github",
+      "href": "https://github.com/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "Stripe",
+      "href": "https://stripe.com/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "Superhuman",
+      "href": "https://superhuman.com/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "Spotify",
+      "href": "https://spotify.com/",
+      "category": "Design & Productivity"
+    },
+    {
+      "name": "ChatGPT",
+      "href": "https://chatgpt.com/",
+      "category": "AI"
+    },
+    {
+      "name": "Claude",
+      "href": "https://claude.ai/",
+      "category": "AI"
+    },
+    {
+      "name": "Midjourney",
+      "href": "https://midjourney.com/",
+      "category": "AI"
+    },
+    {
+      "name": "TensorFlow",
+      "href": "https://tensorflow.org/",
+      "category": "AI"
+    },
+    {
+      "name": "PyTorch",
+      "href": "https://pytorch.org/",
+      "category": "AI"
+    },
+    {
+      "name": "LangChain",
+      "href": "https://langchain.com/",
+      "category": "AI"
+    },
+    {
+      "name": "Ethereum",
+      "href": "https://ethereum.org/",
+      "category": "Blockchain"
+    },
+    {
+      "name": "Solana",
+      "href": "https://solana.com/",
+      "category": "Blockchain"
+    },
+    {
+      "name": "Web3.js",
+      "href": "https://web3js.org/",
+      "category": "Blockchain"
+    },
+    {
+      "name": "Hardhat",
+      "href": "https://hardhat.org/",
+      "category": "Blockchain"
+    },
+    {
+      "name": "MetaMask",
+      "href": "https://metamask.io/",
+      "category": "Blockchain"
+    },
+    {
+      "name": "Python",
+      "href": "https://python.org/",
+      "category": "Backend"
+    },
+    {
+      "name": "Node.js",
+      "href": "https://nodejs.org/",
+      "category": "Backend"
+    },
+    {
+      "name": "Express",
+      "href": "https://expressjs.com/",
+      "category": "Backend"
+    },
+    {
+      "name": "Django",
+      "href": "https://djangoproject.com/",
+      "category": "Backend"
+    },
+    {
+      "name": "FastAPI",
+      "href": "https://fastapi.tiangolo.com/",
+      "category": "Backend"
+    },
+    {
+      "name": "PostgreSQL",
+      "href": "https://postgresql.org/",
+      "category": "Backend"
+    },
+    {
+      "name": "MongoDB",
+      "href": "https://mongodb.com/",
+      "category": "Backend"
+    },
+    {
+      "name": "Redis",
+      "href": "https://redis.io/",
+      "category": "Backend"
+    },
+    {
+      "name": "Docker",
+      "href": "https://docker.com/",
+      "category": "Backend"
+    },
+    {
+      "name": "Kubernetes",
+      "href": "https://kubernetes.io/",
+      "category": "Backend"
+    },
+    {
+      "name": "AWS",
+      "href": "https://aws.amazon.com/",
+      "category": "Backend"
+    },
+    {
+      "name": "React",
+      "href": "https://react.dev/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "href": "https://nextjs.org/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Vue.js",
+      "href": "https://vuejs.org/",
+      "category": "Frontend"
+    },
+    {
+      "name": "TypeScript",
+      "href": "https://typescriptlang.org/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Vite",
+      "href": "https://vitejs.dev/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "href": "https://tailwindcss.com/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Cursor",
+      "href": "https://cursor.sh/",
+      "category": "Development Tools"
+    }
+  ]
+}
+
