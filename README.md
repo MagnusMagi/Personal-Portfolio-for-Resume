@@ -13,6 +13,8 @@
 
 A modern, responsive, and fully accessible portfolio website built with Next.js 16 and Tailwind CSS v4.1. Features a custom JSON-based CMS, scroll animations, and WCAG AA/AAA compliant typography.
 
+> **Note:** This project is licensed under the MIT License. The software is provided "as is" without warranty of any kind. See [LICENSE](LICENSE) for details. For license explanation, see [docs/LICENSE_EXPLANATION.md](docs/LICENSE_EXPLANATION.md).
+
 ## ✨ Features
 
 - **Modern Stack**: Next.js 16, React 18, TypeScript, Tailwind CSS v4.1
