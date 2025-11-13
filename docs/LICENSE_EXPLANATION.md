@@ -1,143 +1,143 @@
-# MIT License Açıklaması
+# MIT License Explanation
 
-## 🛡️ MIT Lisansı Sizi Korur mu?
+## 🛡️ Does MIT License Protect You?
 
-**Kısa cevap: Evet, MIT lisansı sizi korur, ancak belirli şekillerde.**
+**Short answer: Yes, MIT license protects you, but in specific ways.**
 
-## ✅ MIT Lisansının Sizi Koruması
+## ✅ How MIT License Protects You
 
-### 1. **Sorumluluk Reddi (Liability Disclaimer)**
+### 1. **Liability Disclaimer**
 
-MIT lisansı açıkça şunu söyler:
+The MIT license explicitly states:
 
 > "THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND... IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY"
 
-**Bu ne demek?**
-- ✅ Kodunuzu kullanan biri bir sorun yaşarsa (veri kaybı, mali zarar, vb.), **sizden tazminat talep edemez**
-- ✅ Kodunuzda hata olsa bile, **sorumlu tutulamazsınız**
-- ✅ Kodunuzu kullanan birinin işi zarar görürse, **sizden sorumlu tutulamazsınız**
+**What does this mean?**
+- ✅ If someone using your code experiences issues (data loss, financial damage, etc.), **they cannot claim compensation from you**
+- ✅ Even if there are bugs in your code, **you cannot be held liable**
+- ✅ If someone's business is harmed by using your code, **you cannot be held responsible**
 
-### 2. **Garanti Vermezsiniz**
+### 2. **No Warranty**
 
-MIT lisansı kodunuzun:
-- ✅ Çalışacağını garanti etmez
-- ✅ Hatasız olduğunu garanti etmez
-- ✅ Belirli bir amaca uygun olduğunu garanti etmez
+The MIT license does not guarantee that your code:
+- ✅ Will work
+- ✅ Is bug-free
+- ✅ Is suitable for a particular purpose
 
-**Sonuç:** Kullanıcılar kodunuzu kendi riskleriyle kullanır.
+**Result:** Users use your code at their own risk.
 
-### 3. **Telif Hakkı Koruması**
+### 3. **Copyright Protection**
 
-MIT lisansı:
-- ✅ Telif hakkınızı korur (kodun sahibi sizsiniz)
-- ✅ İsminizin ve telif hakkı bildiriminin korunmasını şart koşar
-- ✅ Kodunuzu kullananlar telif hakkı bildirimini kaldıramaz
+The MIT license:
+- ✅ Protects your copyright (you own the code)
+- ✅ Requires preservation of your name and copyright notice
+- ✅ Users cannot remove the copyright notice
 
-## ⚠️ MIT Lisansının Sınırları
+## ⚠️ Limitations of MIT License
 
-### 1. **Kodunuzu Herkes Kullanabilir**
+### 1. **Anyone Can Use Your Code**
 
-MIT lisansı:
-- ⚠️ Kodunuzu **ticari amaçla** kullanmaya izin verir
-- ⚠️ Kodunuzu **değiştirmeye** izin verir
-- ⚠️ Kodunuzu **dağıtmaya** izin verir
-- ⚠️ Kodunuzu **sublisanslamaya** izin verir
+The MIT license:
+- ⚠️ Allows **commercial use** of your code
+- ⚠️ Allows **modification** of your code
+- ⚠️ Allows **distribution** of your code
+- ⚠️ Allows **sublicensing** of your code
 
-**Bu ne demek?**
-- Birisi kodunuzu alıp, değiştirip, ticari bir ürün olarak satabilir
-- Ancak telif hakkı bildiriminizi korumak zorundadır
+**What does this mean?**
+- Someone can take your code, modify it, and sell it as a commercial product
+- However, they must preserve your copyright notice
 
-### 2. **Gizlilik Sağlamaz**
+### 2. **Does Not Provide Privacy**
 
-MIT lisansı:
-- ❌ Kodunuzun **gizli kalmasını** sağlamaz
-- ❌ Kodunuzun **özel kalmasını** sağlamaz
-- ❌ Kodunuzun **ticari kullanımını** engellemez
+The MIT license:
+- ❌ Does not keep your code **secret**
+- ❌ Does not keep your code **private**
+- ❌ Does not prevent **commercial use** of your code
 
-**Eğer kodunuzun gizli kalmasını istiyorsanız:**
-- MIT lisansı kullanmayın
-- Kodunuzu GitHub'da **private** yapın
-- Veya hiç paylaşmayın
+**If you want your code to remain secret:**
+- Do not use MIT license
+- Make your code **private** on GitHub
+- Or do not share it at all
 
-## 📊 MIT Lisansının Avantajları
+## 📊 Advantages of MIT License
 
-### ✅ En Popüler ve Güvenli Açık Kaynak Lisansı
+### ✅ Most Popular and Safe Open Source License
 
-- **%70+** açık kaynak projeler MIT kullanır
-- **En az kısıtlayıcı** lisanslardan biri
-- **Yasal olarak test edilmiş** ve güvenilir
-- **Şirketler tarafından tercih edilir** (Google, Facebook, Microsoft kullanır)
+- **70%+** of open source projects use MIT
+- **Least restrictive** license
+- **Legally tested** and reliable
+- **Preferred by companies** (Google, Facebook, Microsoft use it)
 
-### ✅ Kolay Entegrasyon
+### ✅ Easy Integration
 
-- Diğer projelerle kolayca birleştirilebilir
-- Ticari projelerde kullanılabilir
-- Yasal karmaşıklık yaratmaz
+- Can be easily combined with other projects
+- Can be used in commercial projects
+- Does not create legal complexity
 
-## 🔒 Sizi Ne Korumaz?
+## 🔒 What Does Not Protect You?
 
-### ❌ Kodunuzun Özel Kalması
+### ❌ Keeping Your Code Private
 
-MIT lisansı kodunuzun açık kaynak olarak paylaşılmasına izin verir. Eğer:
-- Kodunuzun gizli kalmasını istiyorsanız
-- Ticari bir sırrınız varsa
-- Patent başvurunuz varsa
+The MIT license allows your code to be shared as open source. If:
+- You want your code to remain secret
+- You have commercial secrets
+- You have a patent application
 
-→ **MIT lisansı kullanmayın, private repository kullanın**
+→ **Do not use MIT license, use private repository**
 
-### ❌ Kodunuzun Kötüye Kullanılması
+### ❌ Misuse of Your Code
 
-MIT lisansı:
-- Kodunuzun kötü amaçlarla kullanılmasını engellemez
-- Ancak bu durumda da **siz sorumlu tutulamazsınız**
+The MIT license:
+- Does not prevent your code from being used for malicious purposes
+- However, in this case, **you cannot be held liable**
 
-## 🎯 Portfolio Projesi İçin MIT Uygun mu?
+## 🎯 Is MIT Suitable for Portfolio Projects?
 
-### ✅ **Evet, MIT mükemmel bir seçim çünkü:**
+### ✅ **Yes, MIT is an excellent choice because:**
 
-1. **Portfolio projesi** - Ticari sır içermiyor
-2. **Açık kaynak** - Diğerlerine örnek olabilir
-3. **Sorumluluk koruması** - Kodunuzu kullananlar sorun yaşarsa sizden sorumlu tutulamaz
-4. **Profesyonel görünüm** - MIT lisansı profesyonel bir imaj verir
-5. **Kolay paylaşım** - İşverenler ve iş arkadaşları kodunuzu kolayca inceleyebilir
+1. **Portfolio project** - Does not contain commercial secrets
+2. **Open source** - Can serve as an example to others
+3. **Liability protection** - Users cannot hold you responsible if they experience issues
+4. **Professional appearance** - MIT license gives a professional image
+5. **Easy sharing** - Employers and colleagues can easily review your code
 
-## 📝 Özet: MIT Lisansı Sizi Korur mu?
+## 📝 Summary: Does MIT License Protect You?
 
-| Durum | Koruma Var mı? |
-|-------|----------------|
-| Kodunuzu kullanan biri zarar görürse | ✅ **Evet** - Sorumlu tutulamazsınız |
-| Kodunuzda hata varsa | ✅ **Evet** - Garanti vermezsiniz |
-| Kodunuz ticari amaçla kullanılırsa | ⚠️ **İzin verir** - Ancak telif hakkınız korunur |
-| Kodunuz gizli kalmalıysa | ❌ **Hayır** - MIT açık kaynak lisansıdır |
-| Kodunuz patentlenmişse | ❌ **Hayır** - MIT patent koruması sağlamaz |
+| Situation | Protection? |
+|-----------|-------------|
+| Someone using your code experiences harm | ✅ **Yes** - You cannot be held liable |
+| There are bugs in your code | ✅ **Yes** - You provide no warranty |
+| Your code is used commercially | ⚠️ **Allowed** - But your copyright is protected |
+| Your code must remain secret | ❌ **No** - MIT is an open source license |
+| Your code is patented | ❌ **No** - MIT does not provide patent protection |
 
-## 🚨 Ne Zaman MIT Kullanmamalısınız?
+## 🚨 When Should You NOT Use MIT?
 
-1. **Ticari sırlar içeriyorsa** → Private repository
-2. **Patent başvurunuz varsa** → Patent başvurusu tamamlanana kadar private
-3. **Müşteri kodları içeriyorsa** → NDA gerektirir, MIT kullanmayın
-4. **Gizli kalması gerekiyorsa** → Private repository
+1. **Contains commercial secrets** → Private repository
+2. **You have a patent application** → Keep private until patent application is complete
+3. **Contains customer code** → Requires NDA, do not use MIT
+4. **Must remain secret** → Private repository
 
-## 💡 Öneriler
+## 💡 Recommendations
 
-### Portfolio Projesi İçin:
+### For Portfolio Projects:
 
-✅ **MIT lisansı kullanın çünkü:**
-- Sorumluluk koruması sağlar
-- Profesyonel görünüm verir
-- Açık kaynak topluluğuna katkı sağlar
-- İşverenler kodunuzu inceleyebilir
+✅ **Use MIT license because:**
+- Provides liability protection
+- Gives professional appearance
+- Contributes to open source community
+- Employers can review your code
 
-### Ek Güvenlik İçin:
+### For Additional Security:
 
-1. **README'de açıkça belirtin:**
+1. **Clearly state in README:**
    ```markdown
    ## Disclaimer
    This project is provided "as is" without warranty of any kind.
    Use at your own risk.
    ```
 
-2. **Kod içinde yorumlar ekleyin:**
+2. **Add comments in code:**
    ```typescript
    /**
     * This code is provided as-is without warranty.
@@ -145,11 +145,11 @@ MIT lisansı:
     */
    ```
 
-3. **API key'leri ve secrets'ları asla commit etmeyin:**
-   - `.env.local` zaten `.gitignore`'da
-   - API key'leri dokümantasyonda örnek olarak gösterin
+3. **Never commit API keys and secrets:**
+   - `.env.local` is already in `.gitignore`
+   - Show API keys in documentation as examples only
 
-## 📚 Kaynaklar
+## 📚 Resources
 
 - [MIT License Official Text](https://opensource.org/licenses/MIT)
 - [Choose a License - MIT](https://choosealicense.com/licenses/mit/)
@@ -157,5 +157,4 @@ MIT lisansı:
 
 ---
 
-**Sonuç:** MIT lisansı portfolio projeniz için **mükemmel bir seçim**. Sizi yasal sorumluluklardan korur ve profesyonel bir imaj verir. Ancak kodunuzun gizli kalması gerekiyorsa, private repository kullanın.
-
+**Conclusion:** MIT license is an **excellent choice** for your portfolio project. It protects you from legal liabilities and gives a professional image. However, if your code must remain secret, use a private repository.
